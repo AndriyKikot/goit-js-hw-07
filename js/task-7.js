@@ -9,8 +9,8 @@ const spanRef = document.querySelector('#text');
 
 inputRef.addEventListener('input', handleInputChange);
 
+inputRef.setAttribute('min', '10');
+
 function handleInputChange() {
     spanRef.style.fontSize = `${event.target.value}px`;
-
-    inputRef.setAttribute('min', '10');
 };
